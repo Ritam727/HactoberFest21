@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+using namespace std;
+long long int cost(vector<vector<long long int>>& graph,vector<long long int>& weights,long long int curr,long long int prev){
+    long long int ans = weights[curr];
+	long long int temp = 0;
+	long long int mx = 0;
+	for(auto next : graph[curr]){
+		if(next != prev){
+			temp = cost(graph, weights, next, curr);
+			if(temp > mx) mx = temp;
+		}
+	}
+	ans += mx;
+	return ans;
+}
+int main() {
+    long long int n;
+    cin>>n;
+    for(long long int j =1;j<=n;j++){
+        long long int nodes;
+        cin>>nodes;
+        vector<long long int> weights(nodes);
+        for(long long int i =0;i<nodes;i++) cin>>weights[i];
+        vector<vector<long long int>> graph(nodes);
+        for(long long int i =0;i<nodes-1;i++){
+            long long int a,b;
+            cin>>a>>b;
+            a--;
+            b--;
+            graph[a].push_back(b);
+            graph[b].push_back(a);
+        }
+        vector<long long int> ans;
+        for(auto i :graph[0]){
+           ans.push_back(cost(graph,weights,i,0));
+        }
+        sort(ans.begin(),ans.end(),greater<long long int>());
+        if(ans.size()==0) cout<<"Case #"<<j<<": "<<weights[0]<<endl;
+        else if(ans.size()>1) cout<<"Case #"<<j<<": "<<ans[0]+ans[1]+weights[0]<<endl;
+        else cout<<"Case #"<<j<<": "<<ans[0]+weights[0]<<endl;
+    }
+    return 0;
+}
