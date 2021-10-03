@@ -1,0 +1,305 @@
+body, #container {
+	margin: 0vw;
+	padding: 0vw;
+	max-width: 100vw;
+}
+
+#container {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(44, 54, 51);
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2.2vw;
+	text-align: center;
+}
+
+#navbar, #main, #footer {
+	width: 100%;
+}
+
+#navbar
+{
+	background-color: rgb(72, 94, 87);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
+#navLogo {
+	padding-left: 5vw;
+}
+
+#logo {
+  border: solid;
+  padding: 0.5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+#navLinks {
+	padding-right: 5vw;
+}
+
+.list {
+	display: inline;
+	margin-left: 5vw;
+}
+
+.link {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.link:hover {
+	color: #ffa38a;
+}
+
+#welcome-section {
+	background-image: url("bg.jpg");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	
+ 
+}
+
+#layer {
+	background-color:rgba(41,47,41,0.7);
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#welcomeHeadline {
+	background-color: transparent;
+	color: white;
+	text-align: center;
+	padding-top: 12vh;
+	font-size:8vw;
+}
+
+#welcomeParagraf {
+	background-color: transparent;
+	color: white;
+	text-align: center;
+  font-size: 1.8vw;
+}
+
+#techstack {
+	margin-top: 15vw;
+	background-color: rgb(54, 48, 48);
+	font-size:5vw;
+}
+#list {
+	background-color: rgb(54, 48, 48);
+	text-align: left;
+	padding-left: 30vw;
+	font-size:3vw;
+	padding-bottom: 10vw;
+}
+
+.divHeadline {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 5vw;
+	color: white;
+	font-size: 2vw;
+}
+
+#projects {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10vw;
+	margin-bottom: 10vw;
+}
+
+.project-tile {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 40vw;
+	margin: 1.5vw;
+	height: 60vw;
+	width: 50vw;
+}
+
+#projectlist {
+	text-align: center;
+	font-size:4vw;
+}
+/* 
+.project-tile:hover {
+	height: 40vw;
+	width: 38vw;
+} */
+
+.iframe {
+	width: 80%;
+	height: 80%;
+	margin: 1.8vw;
+}
+
+.links {
+	padding: 2.5vw;
+	color: white;
+	font-family: 'Architects Daughter', cursive;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.links:hover {
+	color: #ffa38a;
+}
+
+#aboutImg {
+	background-image: url("https://images.freeimages.com/images/large-previews/9e6/abstract-polygonal-low-poly-photos-texture-3-636190.jpg");
+}
+
+#about {
+	padding-top: 3vw;
+	padding-bottom: 3vw;
+	background-color: white;
+	color: black;
+}
+
+.text {
+	padding-left: 5vw;
+	padding-right: 5vw;
+	font-family: 'Fauna One', cursive;
+	font-size: 1.5vw;
+	font-weight: bold;
+}
+
+#contactImg {
+	background-image: url("https://images.freeimages.com/images/large-previews/9e6/abstract-polygonal-low-poly-photos-texture-3-636190.jpg");
+}
+
+#contact {
+	background-color: white;
+	padding: 5vw;
+	font-size: 2.5vw;
+}
+
+.fa {
+	padding: 3vw;
+	color: black;
+	text-decoration: none;
+	
+}
+
+.fa:hover {
+	color: #ffa38a;
+}
+
+
+#footer {
+	padding-left: 5vw;
+	color: #a82400;
+	text-align: left;
+}
+
+@media (max-width: 600px) {
+
+#container {
+	font-size: 4vw;
+}
+
+#navLogo {
+	padding-left: 8vw;
+	font-size: 3vw;
+}
+
+#navLinks {
+	padding-right: 8vw;
+	font-size: 3vw;
+}
+
+#welcome-section {
+	font-size: 3.5vw;
+}
+  
+  #welcomeParagraf {
+    font-size: 3.6vw;
+  }
+
+.divHeadline {
+	padding: 7vw;
+	font-size: 4vw;
+}
+
+#projects {
+	margin-top: 30vw;
+	margin-bottom: 10vw;
+}
+
+.project-tile {
+	margin-top: 2vw;
+  margin-bottom: 5vw;
+	height: 100vw;
+	width: 90vw;
+}
+
+#projectlist {
+	align-self: center;
+}
+/* .project-tile:hover {
+	height: 105vw;
+	width: 95vw;
+} */
+
+.iframe {
+	width: 90%;
+	height: 90%;
+}
+
+.links {
+	padding: 5vw;
+}
+
+#about {
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+}
+
+.text {
+	padding-left: 10vw;
+	padding-right: 10vw;
+	font-size: 4vw;
+}
+
+#contact {
+	padding: 5vw;
+	font-size: 5vw;
+}
+
+.fa {
+	padding: 6vw;
+}
+
+#footer {
+	padding: 4vw;
+}
+
+}
+
+
+
+
+
