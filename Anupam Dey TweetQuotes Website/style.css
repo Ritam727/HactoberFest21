@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.25s ease-in;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23000000' fill-opacity='0.18' fill-rule='evenodd'/%3E%3C/svg%3E");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.quote-text {
+  font-size: 2.75rem;
+}
+.long-quote {
+  font-size: 2rem;
+}
+.fa-quote-left {
+  font-display: 4rem;
+}
+
+.quote-author {
+  margin-top: 1rem;
+  font-display: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.button-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  font-size: 1.2rem;
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  border-radius: 10px;
+  padding: 0.5rem 0.8rem;
+}
+a:hover {
+  color: #52ceff;
+}
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+button:hover {
+  filter: brightness(120%);
+}
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(225, 225, 225, 0.65);
+}
+.twitter-button:hover {
+  color: #38a1f3;
+}
+.fa-twitter {
+  font-size: 1.5rem;
+}
+footer {
+  position: absolute;
+  bottom: 1rem;
+}
+/* Loader */
+.loader {
+  border: 1rem solid #f3f3f3;
+  border-top: 1rem solid #333;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media */
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 10px;
+  }
+  .quote-text {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  footer {
+    bottom: 0;
+    font-size: 0.8rem;
+  }
+  footer center a {
+    font-size: 0.8rem;
+  }
+  .quote-text {
+    font-size: 1.2rem;
+  }
+  button {
+    font-size: 0.8rem;
+  }
+  .quote-container {
+    padding: 18px 8px;
+  }
+}
