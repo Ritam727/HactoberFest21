@@ -1,0 +1,50 @@
+/*  LeetCode 1630 - Arithmetic Subarrays
+
+QUESTION :---
+
+A sequence of numbers is called arithmetic if it consists of at least two elements, and the difference between every two consecutive elements is the same.
+More formally, a sequence s is arithmetic if and only if s[i+1] - s[i] == s[1] - s[0] for all valid i.
+
+For example, these are arithmetic sequences:
+
+1, 3, 5, 7, 9
+7, 7, 7, 7
+3, -1, -5, -9
+
+SOLUTION :---
+
+*/
+
+
+class Solution {
+public:
+    vector<bool> checkArithmeticSubarrays(vector<int>& nums, vector<int>& l, vector<int>& r) {
+        int n = nums.size();
+        int m = l.size();
+        vector<bool> ans;
+        
+        for(int i=0; i<m; i++)
+        {
+            vector<int> temp;
+            for(int j=l[i]; j<=r[i]; ++j)
+            {
+                temp.push_back(nums[j]);
+            }
+            int k = 2;
+            sort(temp.begin(), temp.end());
+            int x = temp[1]-temp[0];
+            for(; k<temp.size(); ++k)
+            {
+                if(temp[k]-temp[k-1]!=x)
+                {
+                    break;
+                }
+            }
+            
+            ans.push_back(k==temp.size());
+            
+        }
+        
+        return ans;
+    }
+};
