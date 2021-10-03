@@ -1,0 +1,43 @@
+Case #1: 53
+Case #2: 5
+Case #3: 111
+Case #4: -1
+Case #5: -1
+Case #6: -1
+Case #7: 86
+Case #8: 88
+Case #9: 37
+Case #10: 98
+Case #11: -1
+Case #12: -1
+Case #13: 78
+Case #14: -1
+Case #15: 2
+Case #16: 66
+Case #17: -1
+Case #18: 3
+Case #19: 59
+Case #20: -1
+Case #21: 26
+Case #22: -1
+Case #23: -1
+Case #24: -1
+Case #25: 108
+Case #26: -1
+Case #27: -1
+Case #28: 8
+Case #29: 2475
+Case #30: -1
+Case #31: 103
+Case #32: 99
+Case #33: 120
+Case #34: 0
+Case #35: -1
+Case #36: 105
+Case #37: 61
+Case #38: 100
+Case #39: 138
+Case #40: 122
+
+
+
