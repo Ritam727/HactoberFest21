@@ -49,9 +49,11 @@ category:'Coding'
     {
     path:'img/nature/5.jpg',
     category:'Nature'
-    }
-
-]
+    },
+    {
+    path:'img/nature/5.jpg',
+    category:'Nature'
+    }]
 const con = document.querySelector('.container')
 const btnCon = document.querySelector('.btn-class')
 
