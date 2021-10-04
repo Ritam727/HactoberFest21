@@ -1,0 +1,429 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+.gray{
+    color: gray;
+}
+.white{
+    color: white;
+}
+section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+}
+section > h1{
+    text-shadow: 1.5px 1.5px 60px magenta;
+    font-size: 1.8rem;
+    margin: 0px;
+}
+#landing{
+    height: 90vh;
+}
+nav ul{
+    height: 5vh;
+    padding-right: 5%;
+    list-style: none;
+}
+nav li{
+    margin-left: 2%;
+    float: right;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+nav li a:hover{
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(121, 49, 255);
+    color: rgb(121, 49, 255);
+}
+#landing div{
+    /* background-colo      r: red; */
+    margin-left: 1%;
+    width: 30%;
+}
+#landing ul{
+    list-style: none;
+    position: relative;
+    left: 40%;
+    top: 20%;
+}
+#landing ul li{
+    margin-top: 9%;
+}
+#landing ul a i{
+    position: relative;
+    font-size: 30px;
+    color: rgb(58, 58, 255);
+}
+#landing ul a i:hover{
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(121, 49, 255);
+    opacity: 0.75;
+    font-size: 35px;
+    color: rgb(159, 0, 180);
+    border-color: rgb(159, 0, 180);
+    transition: font-size 0.5s , color 0.2s ,border-color 0.2s;
+}
+#landing-text{
+    padding-top: 7%;
+}
+.big-text{
+    position: relative;
+    font-size: 6rem;
+    font-weight: 900;
+}
+#landing-img img{
+    position: relative;
+    right: 20%;
+    transform: scale(0.9);
+    width: 100%;
+}
+
+/*About */
+
+#About{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* height: 50vh; */
+    
+}
+.flex-row{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+#about-img img{
+    width: 100%;
+    height: 450px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 8px 1px rgb(190, 189, 189);
+}
+#about-img{
+    /* background-color: red; */
+    width: 25%;
+    height: 30%;
+}
+.bbtm{
+    padding-bottom: 2px;
+    border-bottom: 1px dashed gray;
+    text-shadow: 1px 1px 6px rgb(255, 187, 0);
+}
+#about-text{
+    width: 20%;
+    margin-left: 5%;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: gray;
+}
+#about-time > div{
+  width: 31%;
+   /* background-color: brown; */
+    display : inline-block;
+    font-size: 0.75rem;
+    height: 20%;
+}
+#about-time > div div{
+    font-size: 1.2rem;
+}
+
+/* Skills */
+#Skills{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60vh;
+}
+
+.skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.skill-progress {
+    width: 22%;
+    margin-right: 5%;
+    height: 2.2rem;
+    background-color: lightgray;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.skill-progress > div {
+    box-shadow: 10px 1px 5px 2px grey;
+    /* background-color: rgb(42, 65, 165); */
+    height: 100%;
+    /* width: 60%; */
+    line-height: 37px;
+}
+.skill-progress > div .eighty-percent{
+    width: 80%;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    line-height: 50%;
+}
+.eighty-percent{
+    width: 80%;
+}
+.fifty-percent{
+    width: 50%;
+}
+.eighty-five-percent{
+    width: 85%;
+}
+.teal{
+    background-color: rgb(180, 16, 84);
+}
+.light-purple{
+    background-color: rgb(163, 47, 163);
+}
+.orange{
+    background-color: orange;
+}
+.blue{
+    background-color: rgb(32, 84, 255);
+}
+.red{
+    background-color: rgb(255, 32, 32);
+}
+.green{
+    background-color: rgb(17, 190, 55);
+}
+
+/* Education */
+
+#Education{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+#Education > h1{
+    text-shadow: 1.5px 1.5px 60px red;
+    font-size: 2rem;
+}
+#rod{
+    margin-top: 10px;
+    width: 0.75%;
+    height: 85%;
+    background-color: blue;
+    border-radius: 5px;
+}
+.ball{
+    width: 2vw;
+    height: 4vh;
+    border-radius: 60%;
+    background-color: red;
+    position: relative;
+    left: -0.55vw;
+    margin-top: 100px;
+    display: inline-block;
+}
+.box{
+    width: 20vw;
+    height: 10vh;
+    position: relative;
+    left: 75px;
+    display: inline-block;
+    opacity: 1;
+}
+.even{
+    left: -375px;
+}
+#div1{
+    margin-top: 2%;
+}
+#ball1{
+    margin-top: 50px;
+}
+.box h3{
+    margin: 0px;
+}
+#Contact > h1{
+    text-shadow: 1px 1px 60px turquoise;
+}
+#Contact{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80vh;
+}
+#Contact .bbtm{
+    text-shadow: 1px 1px 6px teal;
+}
+#contact-container{
+   justify-content: center;
+}
+.contact{
+    margin-right: 5px;
+    padding-right: 5%;
+    width: 43%;
+}
+.contact h1,.contact-text{
+    position: relative;
+    left: 70%;
+    margin-bottom: 10px;
+
+}
+.w20 i{
+    font-size: 2rem;
+    margin-top: 35px;
+    color: turquoise;
+}
+.contact-text{
+   position: relative;
+   left: 75%;
+   margin-top: 0px;
+}
+.contact input{
+    margin: 2%;
+    height: 15%;
+    border-radius: 10px;
+    background-color: rgb(213, 226, 241);
+    color: gray;
+    padding-left: 2%;
+}
+.half-input{
+    width: 30%;
+}
+.full-input{
+    width: 68%;
+}
+.contact button{
+    width: 25%;
+    height: 8%;
+    margin: 2%;
+    border-radius: 10px;
+    background-color: turquoise;
+    line-height: 7px;
+    color: rgb(3, 8, 36);
+}
+.contact button h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+input[value="message"]{
+    height: 30%;
+}
+
+
+/* Carousel */
+
+
+* {
+    box-sizing:border-box;
+    font-family: Arial;
+  }
+  
+  /* slideshow taşıyıcı */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height: 80%;
+    width: 80%;
+  }
+  #Projects{
+    flex-direction: column ;
+    align-items: center;
+  }
+  /* #Projects img{
+      width: 100%;
+      height: 100%; */
+  /* } */
+  
+  /* varsayılan olarak görselleri gizliyoruz */
+  .mySlides {
+    display: none;
+  }
+  
+  /* sonraki ve önceki butonları */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* sonraki butonunun pozisyonu */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* üzerine gelince hafif bir efekt verelim */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* görsel başlığı */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    /* background-color: gray; */
+    text-shadow: 1px 1px 200px black;
+    
+  }
+  
+  /* görsel numaraları */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* nokta navigasyonu */
+  
+  
+  /* geçiş animasyonu */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
