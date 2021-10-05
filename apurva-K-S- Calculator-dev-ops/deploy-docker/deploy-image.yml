@@ -1,0 +1,8 @@
+---
+- name: Pull docker image of Lab3Junit
+  hosts: all
+  tasks:
+    - name: Pull junit devops image
+      docker_image:
+        name: apurvaks/calculator_mini_proj
+        source: pull
