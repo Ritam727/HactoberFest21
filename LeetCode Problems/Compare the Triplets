@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+int main()
+{
+    
+    int a[3];
+    int b[3];
+
+    for(int i=0; i<3;i++) {
+        cin>>a[i];
+    }
+
+    for(int i=0;i<3;i++) {
+        cin>>b[i];
+    }    
+
+    int scr1 =0;
+    int scr2 = 0;
+
+    for(int i=0;i<3;i++) {
+        pair<int,int> pi;
+        pi = make_pair(a[i],b[i]); 
+
+        if(pi.first > pi.second)
+            scr1++;
+
+        if(pi.first < pi.second) {
+            scr2++;
+        }
+    }
+
+    vector<int> v;
+    v.push_back(scr1);
+    v.push_back(scr2);
+
+    for(auto i:v)
+        cout<<i<<" ";
+    
+    return 0;
+}
