@@ -8,9 +8,9 @@ int divide(long long dev, long long div) {
   div = abs(div);
   long long q = 0, temp = 0;
   for (int i = 31; i >= 0; --i) {
-    if (temp + (divisor << i) <= dividend) {
-      temp += divisor << i;
-      quotient |= 1LL << i;
+    if (temp + (div << i) <= dev) {
+      temp += div << i;
+      q |= 1LL << i;
     }
   }
   if(sign==-1) q=-q;
