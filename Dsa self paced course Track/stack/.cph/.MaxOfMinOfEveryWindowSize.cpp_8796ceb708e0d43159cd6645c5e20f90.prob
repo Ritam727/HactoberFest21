@@ -1,0 +1,1 @@
+{"name":"Local: MaxOfMinOfEveryWindowSize","url":"/home/rb/Desktop/Files/Coding/Gfg/Track/stack/MaxOfMinOfEveryWindowSize.cpp","tests":[{"id":1626678776537,"input":"1\n7\n10 20 30 50 10 70 30","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/rb/Desktop/Files/Coding/Gfg/Track/stack/MaxOfMinOfEveryWindowSize.cpp","group":"local","local":true}

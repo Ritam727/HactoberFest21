@@ -1,0 +1,1 @@
+{"name":"Local: infix_to_prefix","url":"/home/rb/Desktop/Files/Coding/Gfg/Track/stack/infix_to_prefix.cpp","tests":[{"id":1626368915740,"input":"x+y/z-w*u","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/rb/Desktop/Files/Coding/Gfg/Track/stack/infix_to_prefix.cpp","group":"local","local":true}
