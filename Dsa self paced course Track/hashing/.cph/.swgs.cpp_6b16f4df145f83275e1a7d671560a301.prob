@@ -1,0 +1,1 @@
+{"name":"Local: swgs","url":"/home/rb/Desktop/Files/Coding/Gfg/Track/hashing/swgs.cpp","tests":[{"id":1622619709368,"input":"1\n5 12\n1 2 3 7 5","output":"1 3 6 13 18"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/rb/Desktop/Files/Coding/Gfg/Track/hashing/swgs.cpp","group":"local","local":true}
