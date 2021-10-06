@@ -1,0 +1,49 @@
+body{
+    background: #e8e8e8;
+}
+
+.form-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    padding: 20px;
+    box-shadow: 0 0 10px 0 #ccc;
+    background: #fff;
+}
+
+input[type=text], input[type=password], button{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #bbb;
+    width: 300px;
+    height: 40px;
+    background: none;
+    color: #555;
+    box-shadow: 5px 3px 2px 0px #ccc;
+    padding-left: 10px;
+}
+
+button{
+    width: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #e0e0e0;
+    color: black;
+}
+
+.passwd-cont{
+    position: relative;
+}
+
+.passwd-cont img{
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    cursor: pointer;
+    opacity: 0.5;
+}
